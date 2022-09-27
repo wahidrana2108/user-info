@@ -1,0 +1,28 @@
+.section li:hover{
+    font-weight: bolder;
+}
+
+/* .section button{
+    opacity: 0;
+}
+
+.section button:hover{
+    opacity: 1;
+} */
+
+.heading{
+    color: gray;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.button{
+    background-color: greenyellow;
+    border-radius: 15%;
+
+}
+
+.button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
