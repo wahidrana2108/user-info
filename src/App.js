@@ -6,19 +6,19 @@ import data from '../src/Components/Data/userData.json';
 
 function App() {
   const userData = data;
-  console.log(userData);
+
   const [user, setUser] = useState([]);
+  const users = userData.map(user  => user._id);
+  console.log(users);
   return (
     <>
+    <h1>User Loaded: {user.length}</h1>
     {
-      <ol>
-        <li>
-          {
-            userData.map(user => user.name)
-          }
-        </li>
-      </ol>
+        <ol>
+            { userData.map(user  => <li key={user._id}> {user.name}</li>) }
+        </ol>
     }
+    <User></User>
     </>
   );
 }
